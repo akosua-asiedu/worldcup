@@ -21,36 +21,18 @@
       border-bottom: 4px solid #FCD116;
     }
 
-    header h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      margin-bottom: 4px;
-    }
-
-    header p {
-      font-size: 0.95rem;
-      color: #FCD116;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
+    header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 4px; }
+    header p { font-size: 0.95rem; color: #FCD116; letter-spacing: 2px; text-transform: uppercase; }
 
     .matchup {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 32px;
-      padding: 32px 40px 20px;
-      width: 100%;
+      padding: 32px 20px 20px;
     }
 
-    .team {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      flex: 1;
-    }
+    .team { display: flex; flex-direction: column; align-items: center; gap: 10px; flex: 1; }
 
     .team img {
       width: 100%;
@@ -62,28 +44,13 @@
       box-shadow: 0 4px 24px rgba(0,0,0,0.6);
     }
 
-    .team-name {
-      font-size: 1.2rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
+    .team-name { font-size: 1.2rem; font-weight: 700; text-transform: uppercase; }
     .ghana .team-name { color: #FCD116; }
     .panama .team-name { color: #C8102E; }
 
-    .vs {
-      font-size: 2.5rem;
-      font-weight: 900;
-      color: #ffffff;
-      opacity: 0.3;
-      flex-shrink: 0;
-    }
+    .vs { font-size: 2.5rem; font-weight: 900; color: #ffffff; opacity: 0.3; flex-shrink: 0; }
 
-    .predictions-section {
-      padding: 16px 40px 40px;
-      width: 100%;
-    }
+    .predictions-section { padding: 16px 20px 40px; }
 
     .section-title {
       text-align: center;
@@ -96,18 +63,8 @@
 
     .predictions-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 12px;
-      width: 100%;
-      margin-bottom: 12px;
-    }
-
-    .predictions-grid-bottom {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      width: 66.8%;
-      margin: 0 auto;
     }
 
     .prediction-card {
@@ -115,7 +72,7 @@
       border: 1px solid #2a2a2a;
       border-top: 4px solid #FCD116;
       border-radius: 10px;
-      padding: 20px 12px;
+      padding: 20px 8px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -123,18 +80,8 @@
       text-align: center;
     }
 
-    .predictor {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #ffffff;
-    }
-
-    .prediction-score {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: #FCD116;
-      line-height: 1.4;
-    }
+    .predictor { font-size: 1rem; font-weight: 700; color: #ffffff; }
+    .prediction-score { font-size: 0.9rem; font-weight: 700; color: #FCD116; }
 
     footer {
       text-align: center;
@@ -157,9 +104,7 @@
       <img src="ghana.avif" alt="Ghana Black Stars" />
       <span class="team-name">🇬🇭 Ghana</span>
     </div>
-
     <div class="vs">VS</div>
-
     <div class="team panama">
       <img src="panama.avif" alt="Panama National Team" />
       <span class="team-name">🇵🇦 Panama</span>
@@ -167,8 +112,7 @@
   </div>
 
   <div class="predictions-section">
-    <p class="section-title">🏆 Friend Predictions</p>
-
+    <p class="section-title">🏆 Who Called It?</p>
     <div class="predictions-grid">
       <div class="prediction-card">
         <span class="predictor">Papa</span>
@@ -182,9 +126,6 @@
         <span class="predictor">Mark</span>
         <span class="prediction-score">Ghana 2 – 1 Panama</span>
       </div>
-    </div>
-
-    <div class="predictions-grid-bottom">
       <div class="prediction-card">
         <span class="predictor">Freda</span>
         <span class="prediction-score">Ghana 5 – 0 Panama</span>
@@ -193,8 +134,11 @@
         <span class="predictor">Mayor</span>
         <span class="prediction-score">Ghana 3 – 0 Panama</span>
       </div>
+      <div class="prediction-card">
+        <span class="predictor">Claude 🤖</span>
+        <span class="prediction-score">Ghana 2 – 0 Panama</span>
+      </div>
     </div>
-
   </div>
 
   <footer>
