@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ghana vs Panama – World Cup Predictions</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0a0a0a;
+      color: #ffffff;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #006B3F 0%, #000000 50%, #CE1126 100%);
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 4px solid #FCD116;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #FCD116;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .matchup {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 48px 20px 32px;
+      flex-wrap: wrap;
+    }
+
+    .team {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .team img {
+      width: 220px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 3px solid #333;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.6);
+    }
+
+    .team-name {
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .ghana .team-name { color: #FCD116; }
+    .panama .team-name { color: #C8102E; }
+
+    .vs {
+      font-size: 3rem;
+      font-weight: 900;
+      color: #ffffff;
+      opacity: 0.3;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #FCD116;
+      margin-bottom: 24px;
+    }
+
+    .predictions-wrapper {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+
+    .prediction-card {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-left: 4px solid #FCD116;
+      border-radius: 10px;
+      padding: 18px 24px;
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: transform 0.2s;
+    }
+
+    .prediction-card:hover {
+      transform: translateX(4px);
+    }
+
+    .predictor {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .prediction-score {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #FCD116;
+      letter-spacing: 1px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #444;
+      font-size: 0.85rem;
+      border-top: 1px solid #1a1a1a;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>⚽ Ghana vs Panama</h1>
+    <p>2026 FIFA World Cup &nbsp;|&nbsp; Predictions Leaderboard</p>
+  </header>
+
+  <div class="matchup">
+    <div class="team ghana">
+      <img src="ghana.avif" alt="Ghana Black Stars" />
+      <span class="team-name">🇬🇭 Ghana</span>
+    </div>
+
+    <div class="vs">VS</div>
+
+    <div class="team panama">
+      <img src="panama.avif" alt="Panama National Team" />
+      <span class="team-name">🇵🇦 Panama</span>
+    </div>
+  </div>
+
+  <div class="predictions-wrapper">
+    <p class="section-title">🏆 Friend Predictions</p>
+
+    <div class="prediction-card">
+      <span class="predictor">Papa</span>
+      <span class="prediction-score">Ghana 1 – 1 Panama</span>
+    </div>
+
+    <div class="prediction-card">
+      <span class="predictor">Eazy</span>
+      <span class="prediction-score">Ghana 1 – 0 Panama</span>
+    </div>
+
+    <div class="prediction-card">
+      <span class="predictor">Mark</span>
+      <span class="prediction-score">Ghana 2 – 1 Panama</span>
+    </div>
+
+    <div class="prediction-card">
+      <span class="predictor">Freda</span>
+      <span class="prediction-score">Ghana 5 – 0 Panama</span>
+    </div>
+
+    <div class="prediction-card">
+      <span class="predictor">Mayor</span>
+      <span class="prediction-score">Ghana 3 – 0 Panama</span>
+    </div>
+
+  </div>
+
+  <footer>
+    Hosted on Azure Blob Storage &nbsp;·&nbsp; Built by Akosua Asiedu &nbsp;·&nbsp; AZ-900 Guided Project
+  </footer>
+
+</body>
+</html>
